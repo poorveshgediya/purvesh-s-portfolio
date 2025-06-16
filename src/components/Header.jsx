@@ -1,5 +1,5 @@
 import React, { Profiler, useState } from "react";
-import style from "../style/header.module.css";
+import "../style/header.css";
 import Profile from "../photo/Profile.jpg";
 import { Link, data } from "react-router-dom";
 import {
@@ -16,8 +16,8 @@ import { GiAbstract003 } from "react-icons/gi";
 const Header = () => {
   return (
     <>
-      <div className={style.background}></div>
-      <div className={style.menu}>
+      <div className="background"></div>
+      <div className="menu">
         <header >
           <Link to="/About">🧑‍💻 About Me</Link>
           <Link to="/Projects">💼 Projects</Link>
@@ -25,7 +25,7 @@ const Header = () => {
           <Link to="/Skills">🧠 Skills</Link>
           <Link href="" download>📥 Resume</Link>
 
-          <p className={style.social_text}>
+          <p className="social_text">
             <Typewriter
               words={[
                 "Don't forget to connect with me!",
@@ -41,32 +41,32 @@ const Header = () => {
               delaySpeed={1500}
             />
           </p>
-          <footer className={style.social_media}>
+          <footer className="social_media">
             <a
-              id={style.github}
+              id="github"
               href="https://github.com/poorveshgediya"
               target="_blank"
             >
               <FaGithub/>
             </a>
             <a
-              id={style.linkedin}
+              id="linkedin"
               href="https://www.linkedin.com/in/purveshgediya/"
               target="_blank"
             >
               <FaLinkedin />
             </a>
-            <a id={style.whatsapp} href="https://wa.me/7861851386" target="_blank">
+            <a id="whatsapp" href="https://wa.me/7861851386" target="_blank">
               <FaWhatsapp />
             </a>
             <a
-              id={style.email}
+              id="email"
               href="mailto:poorveshgediya@gmail.com"
               target="_blank"
             >
               <FaEnvelope />
             </a>
-            <a id={style.x} href="https://x.com/GediyaPoorvesh" target="_blank">
+            <a id="x" href="https://x.com/GediyaPoorvesh" target="_blank">
               <FaXTwitter />
             </a>
           </footer>

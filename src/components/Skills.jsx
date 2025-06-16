@@ -1,14 +1,14 @@
 import React from "react";
-import style from "../style/Skills.module.css";
+import "../style/Skills.css";
 
 const skills = ["React", "JavaScript", "CSS", "HTML", "Blockchian", "Solidity"];
 
 function Skills() {
   return (
     <>
-      <div className={style.main_div}>
+      <div className="main_div">
         {skills.map((skill, index) => (
-          <div key={index} className={style.skillname}>
+          <div key={index} className="skillname">
             <li>{skill}</li>
           </div>
         ))}
