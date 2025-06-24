@@ -7,68 +7,84 @@
 
 html,
 body {
-  display: grid;
+  /* display: grid; */
   height: 0px;
   background: #212121;
 }
-
+/* 
 .menu {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.menu a {
-  height: auto;
-  width: auto;
+*/
+.menubutton{
   font-size: clamp(10px, 15px, 20px);
+  height: 40px;
+  width: 250px;
   border-radius: 5px;
   text-decoration: none;
-  padding: 10px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
   color: whitesmoke;
   background: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+} 
+.a{
   display: flex;
   flex-direction: column;
-  text-transform: uppercase;
-  margin: 10px 0px;
-  letter-spacing: 1px;
-  text-align: center;
-  transition: 0.3s ease;
-}
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+} 
 
-.menu a:hover {
+.menubutton:hover {
   background: #34b5ff;
   transform: scale(1.1);
 }
 
-.background {
+.socialtext{
+  padding: 50px 0px 20px 0px;
+  color: whitesmoke;
+  text-align:center;
+} 
+
+.socialwords{
+  width: 100px;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+/* .background {
   width: 100vw;
   height: 100vh;
   background-image: url("../photo/Background.jpg");
   background-size: cover;
   background-position: center;
   filter: blur(8px);
-}
+} */
 
-#social {
-  margin-top: 60px;
-  width: 500px;
-  color: whitesmoke;
-  letter-spacing: 1px;
-  font-size: 18px;
-}
 .social_media {
   padding: 0;
   display: flex;
-  gap: 10px;
+  justify-content: center;
   align-items: center;
+  gap: 10px;
 }
-.social_media a {
-  padding: 13px;
+
+.soialmediabutton{
+  background-color: #333;
+  border-radius: 5px;
+  padding: 11px;
   transition: color 0.3s ease;
   color: whitesmoke;
 }
+
 
 #x:hover {
     background: linear-gradient(to bottom, black,rgb(57, 56, 56))
@@ -85,10 +101,3 @@ body {
 #email:hover{
     background:linear-gradient(to bottom, #ff0080, #7928ca);
 }
-
-.social_text{
-  width: 300px;
-  padding-top: 100px;
-  font-size: 18px;
-  color: whitesmoke;
-} 
