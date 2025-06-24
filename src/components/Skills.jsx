@@ -2,27 +2,39 @@ import React from "react";
 import style from "../style/Skills.module.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Photo1 from "../photo/frontend-skill.png"
+import Photo2 from "../photo/problem-skill.png";
+import Photo3 from "../photo/html.png";
+import Photo4 from "../photo/css.png";
+import Photo5 from "../photo/JavaScript.png";
 
 const skills = [
   {
-    image: "img/cp-removebg-preview.png",
-    name: "Competitive Programming",
-    description:
-      "Competitive programming is a sport of coding, where individuals engage in solving algorithmic challenges against the clock, showcasing their problem-solving skills and efficiency in crafting elegant and optimized solutions.",
-  },
-  {
-    image: "img/fe-removebg-preview.png",
+    image: Photo1,
     name: "Front-end Development",
-    description:
-      "Front-end development is the art of bringing digital creativity to life, focusing on the user interface and user experience to seamlessly merge design with functionality, shaping the visual and interactive elements of websites.",
+    description:  "Frontend development is all about bringing websites to life. It’s the part that users see and interact with - like buttons, menus, animations, and layouts. As a frontend developer, you use tools like HTML, CSS, and JavaScript exc.. to make websites look good, feel smooth, and work well on any device.",
   },
   {
-    image: "img/ml-removebg-preview.png",
-    name: "Machine Learning",
-    description:
-      "Machine learning is a transformative field at the intersection of computer science and A.I., empowering systems to learn from data, recognize patterns, and make intelligent decisions, entering in a automated insights and problem-solving.",
+    image: Photo2,
+    name: "Problem Solving",
+    description: "Problem-solving is about finding ways to fix things or make them better. As a beginner in coding, it means looking at a problem, understanding it step by step, and trying out different solutions until something works. It’s like solving a puzzle - with logic and creativity.",
   },
-];
+  {
+    image: Photo3,
+    name: "HTML",
+    description: "Problem-solving is about finding ways to fix things or make them better. As a beginner in coding, it means looking at a problem, understanding it step by step, and trying out different solutions until something works. It’s like solving a puzzle - with logic and creativity.",
+  },
+  {
+    image: Photo4,
+    name: "CSS",
+    description: "Problem-solving is about finding ways to fix things or make them better. As a beginner in coding, it means looking at a problem, understanding it step by step, and trying out different solutions until something works. It’s like solving a puzzle - with logic and creativity.",
+  },
+  {
+    image: Photo5,
+    name: "Java-Script",
+    description: "Problem-solving is about finding ways to fix things or make them better. As a beginner in coding, it means looking at a problem, understanding it step by step, and trying out different solutions until something works. It’s like solving a puzzle - with logic and creativity.",
+  }
+  ];
 
 function Skills() {
   return (
