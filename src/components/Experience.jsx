@@ -27,8 +27,8 @@ function Experience() {
       <section className={style.experience} id="experience">
         <div className={style.experiencecontent}>
           {experience.map((experience, index) => (
-            <>
-            <div key={index} className={style.box}>
+            <React.Fragment key={index}>
+            <div className={style.box}>
               <img
                 className={style.cctlogo}
                 src={experience.logo}
@@ -47,27 +47,10 @@ function Experience() {
               </p>
             </div>
             <br />
-            </>
+            </React.Fragment>
           ))}
         </div>
       </section>
-
-      {/* 
-          <div className={style.box}>
-            <img className={style.cctlogo} src="../src/photo/cct.png" />
-            <h3>Calanjiyam Consultancies and Technologies</h3>
-            <h4>Web developer Intern</h4>
-            <br />
-            <p>
-              • Contributing in our group project which is “ web based coffee
-              billing system ” 
-              <br />
-              • I’m handle the “ product management module ”.
-              <br /> 
-              • Created UI for display product with details and also can add
-              manually and using HTML-CSS, JavaScript, PHP, Mysql.
-            </p>
-          </div> */}
       <Footer />
     </>
   );

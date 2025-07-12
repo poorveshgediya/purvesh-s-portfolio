@@ -4,12 +4,12 @@ import style from "../style/layout.module.css";
 
 function Layout() {
   return (
-    <div className={style.wrapper}>
+    <>
       <div className={style.background}></div>
       <div className={style.pageContent}>
-        <Outlet /> 
+        <Outlet />
       </div>
-    </div>
+    </>
   );
 }
 

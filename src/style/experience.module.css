@@ -27,10 +27,9 @@ section{
 }
 .box{
     padding: 45px;
-    background: #12141c;
     border-top: 5px solid transparent;
     border-radius: 0.5rem;
-    transition: all .40s ease;
+    border: 2px solid #343b31;
     cursor: pointer;
 }
 .box h3{
@@ -45,13 +44,7 @@ section{
     line-height: 30px;
     letter-spacing: 0.5px;
 }
-.box:hover{
-    transform: scale(1.01) translateY(-5px);
-    border-top: 5px solid var(--main-color);
-}
-.box:hover h3{
-    color: var(--main-color);
-}
+
 .cctlogo{
     height: 100px;
     width: 100px;

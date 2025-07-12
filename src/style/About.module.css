@@ -1,8 +1,8 @@
 .heading {
   color: #c8a3a3;
   letter-spacing: 2px;
-  padding-top: 100px;
-  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
 }
 
 .aboutsection {
@@ -21,6 +21,7 @@
 }
 .aboutme {
   font-size: 25px;
+  color: #343b31;
 }
 .resume {
   color: whitesmoke;

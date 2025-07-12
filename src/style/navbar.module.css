@@ -7,7 +7,7 @@
   justify-content: space-evenly;
   list-style: none;
   /* background-color: #212121; */
-  background-color: #1f1f1f;
+  /* background-color: #1f1f1f; */
   letter-spacing: 0.5px;
 }
 .navbar li {
@@ -21,10 +21,9 @@
   font-weight: bold;
   color: whitesmoke;
 }
-/* .navbar li a:hover {
-  background-color: whitesmoke;
-  color: #8b8e86;
-} */
+.navbar li a:hover {
+  color: #343b31;
+}
 
 .navbar li a {
   display: inline-block;
@@ -39,7 +38,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: whitesmoke;
+  background-color: #343b31;
   transition: transform 0.25s ease-out;
 }
 

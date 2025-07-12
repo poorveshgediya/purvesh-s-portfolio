@@ -17,7 +17,7 @@ function introduction() {
             Hey, I'm
             <span className={style.words}>
               <Typewriter
-                words={[" Poorvesh.", " a Developer.", " Tech Enthusiast."]}
+                words={[" Poorvesh.", " a Developer.", " Tech Enthusiast."," Little bit web3 content creator."]}
                 loop={true}
                 curser
                 curserStyle="|"
@@ -29,8 +29,8 @@ function introduction() {
             <br />
             <br />
             <span className={style.aboutme}>
-              hi, myself Purvesh gediya From Rajkot, Gujarat. Always eager
-              to learn in new technology's...
+              hi, my self Purvesh Gediya from Rajkot. Completed my B.Tech in CSE (blockchain) field at Parul
+University. Passionate about in web development & in web3 and blockchain technology ...
             </span>
           <br />
           <br />  
