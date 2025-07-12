@@ -1,0 +1,29 @@
+/* firstpage.module.css */
+
+.wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../photo/Background.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+  }
+  
+  .pageContent {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    color: white;
+  }
+  

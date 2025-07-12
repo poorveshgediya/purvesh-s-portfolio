@@ -11,14 +11,7 @@ body {
   height: 0px;
   background: #212121;
 }
-/* 
-.menu {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-*/
+
 .menubutton{
   font-size: clamp(10px, 15px, 20px);
   height: 40px;
@@ -59,15 +52,6 @@ body {
   letter-spacing: 1px;
   font-size: 20px;
 }
-
-/* .background {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../photo/Background.jpg");
-  background-size: cover;
-  background-position: center;
-  filter: blur(8px);
-} */
 
 .social_media {
   padding: 0;
