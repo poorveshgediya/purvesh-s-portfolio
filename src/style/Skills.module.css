@@ -1,14 +1,31 @@
-.skillimage{
-  height:120px;
+.skillimage {
+  height: 120px;
   width: 120px;
   border: 2px solid #343b31;
   border-radius: 10px;
   padding: 20px;
 }
-.skillscontent{
+.skillscontent {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   gap: 50px;
+  animation: skills 12s linear infinite;
+}
+.skillname{
+  margin-top: 5px;
+  font-size: 16px;
+  color: #343b31;
+  text-align: center;
+  font-weight: bold;
+}
+
+@keyframes skills {
+  from {
+    transform: translateX(105%);
+  }
+  to {
+    transform: translateX(-105%);
+  }
 }

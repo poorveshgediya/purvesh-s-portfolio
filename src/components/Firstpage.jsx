@@ -1,6 +1,5 @@
 import React, { Profiler, useState } from "react";
 import style from "../style/firstpage.module.css";
-import Profile from "../photo/Profile.jpg";
 import { Link, data } from "react-router-dom";
 import {
   FaEnvelope,

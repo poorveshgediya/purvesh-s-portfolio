@@ -1,6 +1,5 @@
 import React from 'react'
 import style from "../style/Footer.module.css";
-import medium from "../photo/Medium.png";
 import {
     FaEnvelope,
     FaFacebook,

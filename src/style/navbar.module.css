@@ -6,8 +6,6 @@
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  /* background-color: #212121; */
-  /* background-color: #1f1f1f; */
   letter-spacing: 0.5px;
 }
 .navbar li {
@@ -72,6 +70,6 @@
 @media only screen and (max-width: 600px){
   .navbar li a{
     padding: 10px 10px;
-  font-size: medium;
+  font-size: large;
   }
 }
