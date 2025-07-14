@@ -7,12 +7,13 @@
 }
 .skillscontent {
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  justify-content: center;
+  height: 100vh;
   gap: 50px;
   animation: skills 12s linear infinite;
 }
+
 .skillname{
   margin-top: 5px;
   font-size: 16px;
