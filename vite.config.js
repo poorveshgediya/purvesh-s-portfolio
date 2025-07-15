@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/purvesh-sPortfolio.github.io/',
   server: {
     host: '0.0.0.0',
     port: 5173
