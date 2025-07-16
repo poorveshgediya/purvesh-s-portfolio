@@ -13,24 +13,14 @@
 section{
     padding: 160px 16% 90px;
 }
-.main-text{
-    text-align: center;
-}
-.main-text h2{
-    font-size: var(--h2-font);
-    margin-bottom: 10px;
-}
-.main-text h4{
-    color: var(--main-color);
-    font-size: 24px;
-    font-weight: 600;
-}
+
 .box{
     padding: 45px;
     border-top: 5px solid transparent;
     border-radius: 0.5rem;
     border: 2px solid #343b31;
     cursor: pointer;
+    
 }
 .box h3{
     font-size: 24px;
@@ -52,4 +42,21 @@ section{
     border-radius: 50%;
 }
 
-
+@media only screen and (max-width: 500px){
+    .experience{
+        padding: 0px;
+        margin: 70px 20px;
+    }
+    .box{
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    .topcontent{
+        display: flex;
+        gap: 20px;
+    }
+    .box p{
+        line-height:20px;
+    }
+    
+}

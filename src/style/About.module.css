@@ -50,8 +50,13 @@
   }
   .aboutme {
     font-size: 18px;
-    color: #310c0c;
-    /* background-color: yellowgreen; */
+    color: #f5f5f5e3;
+  }
+  .words {
+    color: #7b3838;
+  }
+  .heading{
+    color: #f5f5f5e3;
   }
 
 }
