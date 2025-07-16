@@ -10,7 +10,6 @@ import Resume from "./components/Resume";
 
 function App() {
   return (
-    // <Router>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Firstpage />}></Route>
@@ -21,7 +20,6 @@ function App() {
           <Route path="/Resume" element={<Resume />}></Route>
         </Route>
       </Routes>
-    // </Router>
   );
 }
 

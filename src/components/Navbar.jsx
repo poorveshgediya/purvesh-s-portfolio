@@ -1,6 +1,6 @@
 import React from 'react'
 import style from "../style/navbar.module.css";
-
+import { Link } from 'react-router-dom';
 function navbar() {
 
 
@@ -9,19 +9,19 @@ function navbar() {
     <div>
         <div className={style.navbar}>
           <li className={style.header}>
-            <a href="About">About</a>
+            <Link to="/About">About</Link>
           </li>
           <li className={style.header}>
-            <a href="Projects">Projects</a>
+            <Link to="/Projects">Projects</Link>
           </li>
           <li className={style.header}>
-            <a href="Experience">Experience</a>
+            <Link to="/Experience">Experience</Link>
           </li>
           <li className={style.header}>
-            <a href="Skills ">Skills</a>
+            <Link to="/Skills ">Skills</Link>
           </li>
           <li className={style.header}>
-            <a href="Resume">Resume</a>
+            <Link to="/Resume">Resume</Link>
           </li>
         </div>
     </div>
