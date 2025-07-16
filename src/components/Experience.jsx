@@ -4,7 +4,13 @@ import Footer from "./Footer";
 import style from "../style/experience.module.css";
 import logo1 from "../photo/cct.png";
 import logo2 from "../photo/cognifyz.png"; 
+import logo3 from "../photo/ascendEX.jpg";
 const experience = [
+  {
+    logo: logo3,
+    company: "AscendEX",
+    position: "Affiliate Program | (March 2025 - Present)",
+    description:"Collaborating with AscendEX’s affiliate program to promote the platform among indian audiences. Creating and sharing educational content across social platforms to onboard new users."  },
   {
     logo: logo1,
     company: "Calanjiyam Consultancies and Technologies",
@@ -16,7 +22,8 @@ const experience = [
     logo: logo2,
     company: "Cognifyz Technologies",
     position: "Web developer Intern | (September - October 2024)",
-    description:"web developer intern during the internship and complete the tasks which is assigned by the mentor."  }
+    description:"web developer intern during the internship and complete the tasks which is assigned by the mentor."  
+  },
 ];
 
 function Experience() {

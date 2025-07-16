@@ -7,11 +7,15 @@
 }
 .skillscontent {
   display: flex;
-  align-items: center;
+  position: fixed;
+  top: 35%;
   justify-content: center;
-  height: 100vh;
   gap: 50px;
-  animation: skills 12s linear infinite;
+  animation: skills 14s linear infinite;
+}
+
+.skillscontent:hover{
+  animation-play-state: paused;
 }
 
 .skillname{
@@ -24,9 +28,25 @@
 
 @keyframes skills {
   from {
-    transform: translateX(105%);
+    transform: translateX(95%);
   }
   to {
     transform: translateX(-105%);
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .skillscontent{
+    animation: skills 12s linear infinite;
+  }
+
+  @keyframes skills {
+    from {
+      transform: translateX(35%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}
+  
