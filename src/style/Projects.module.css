@@ -14,7 +14,7 @@
 
 
 .project1{
-    height: 700px;
+    /* height: 700px; */
     width: 400px;
     border: 2px solid #343b31;
     color: white;
@@ -32,7 +32,7 @@
 }
 .project1 p{
     padding: 0px 15px 15px 15px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
 }
 .project1 ul{
@@ -47,4 +47,17 @@
     padding: 20px;
     text-decoration: none;
     color: whitesmoke;
+}
+
+@media only screen and (max-width:500px){
+    .project1{
+        margin: 20px;
+    }
+    .project1 p{
+        font-size: 14px;
+    text-align: justify;
+    }
+    .project1 ul{
+        font-size: 12px;
+    }
 }

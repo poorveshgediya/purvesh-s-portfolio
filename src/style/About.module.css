@@ -20,8 +20,8 @@
   border-radius: 50%;
 }
 .aboutme {
-  font-size: 25px;
-  color: #343b31;
+  font-size: 21px;
+  color: #f5f5f5e3;
 }
 .resume {
   color: whitesmoke;
@@ -49,8 +49,10 @@
   padding: 15px 5px 15px 25px;
   }
   .aboutme {
-    font-size: 18px;
+    line-height: 0px;
+    font-size: 15px;
     color: #f5f5f5e3;
+    text-align: justify;
   }
   .words {
     color: #7b3838;
@@ -58,5 +60,10 @@
   .heading{
     color: #f5f5f5e3;
   }
+.resume{
+  font-size: 14px;
+  padding: 4px 7px;
+  margin-bottom: 20px;
+}  
 
 }

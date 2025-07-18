@@ -12,12 +12,17 @@ function introduction() {
         <Navbar />
         <br />
         <div className={style.aboutsection}>
-              <img className={style.image} src={profile1} alt="" />
+          <img className={style.image} src={profile1} alt="" />
           <h1 className={style.heading}>
             Hey, I'm
             <span className={style.words}>
               <Typewriter
-                words={[" Poorvesh.", " a Developer.", " Tech Enthusiast."," Little bit web3 content creator."]}
+                words={[
+                  " Poorvesh.",
+                  " a Developer.",
+                  " Tech Enthusiast.",
+                  " Little bit web3 content creator.",
+                ]}
                 loop={true}
                 curser
                 curserStyle="|"
@@ -29,17 +34,24 @@ function introduction() {
             <br />
             <br />
             <span className={style.aboutme}>
-              hi, my self Purvesh Gediya from Rajkot. Completed my B.Tech in CSE (blockchain) field at Parul
-University. Passionate about in web development & in web3 and blockchain technology ...
+              Hi, my self Purvesh Gediya from Rajkot. Completed my B.Tech in CSE
+              (blockchain) field at Parul University. Frontend Developer skilled
+              in HTML/CSS, JavaScript, and ReactJS, with a focus on building
+              clean and responsive user interfaces. exploring blockchain
+              technologies and passionate about learning new tools...
             </span>
-          <br />
-          <br />  
-            <a href="/Purvesh_Gediya-Resume.pdf" download className={style.resume}>
-        Resume ⬇
-      </a>
+            <br />
+            <br />
+            <a
+              href="/Purvesh_Gediya-Resume.pdf"
+              download
+              className={style.resume}
+            >
+              Resume ⬇
+            </a>
           </h1>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

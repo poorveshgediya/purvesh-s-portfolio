@@ -33,6 +33,7 @@ section{
     font-size: var(--p-font);
     line-height: 30px;
     letter-spacing: 0.5px;
+    text-align: justify;
 }
 
 .cctlogo{
@@ -57,6 +58,8 @@ section{
     }
     .box p{
         line-height:20px;
+        font-size: 13px;
+        text-align: justify;
     }
     
 }

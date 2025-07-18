@@ -26,31 +26,16 @@ function Projects() {
       discripction:
         "It’s web based coffee billing system where the store keeper will manage the customer details and invoices and the customer is regular or not and also manage the product menu all the product and it’s up to date means from sing-up to pay bill on web.",
       techstcak: ["HTML-CSS", "JavaScript", "PHP", "MySql"],
-      github: "https://github.com/poorveshgediya/Calculator",
-      live: "https://calculator-purvesh.netlify.app/",
-    },
-    {
-      title: "NFT-Marketplace",
-      image: Photo3,
-      discripction:
-        "Built a basic yet functional calculator using React that performs arithmetic operations like addition, subtraction, multiplication, and division. Focused on clean UI design using CSS and implemented component-based architecture in React.",
-      techstcak: [
-        "HTML-CSS",
-        "React",
-        "TypeScript",
-        "Aptos Blockchain",
-        "Petra Wallet",
-      ],
-      github: "https://github.com/poorveshgediya/Calculator",
-      live: "https://ownnft-marketplace.netlify.app/",
+      github: "",
+      live: "https://crisscrosstamizh.in/WDI_APR_25/web_billing/index.html",
     },
     {
       title: "Portfolio",
       image: Photo4,
-      discripction: "",
+      discripction: "Built a personal portfolio using ReactJS with a focus on reusable components for efficient code structure. Deploy with the help of Netlify hosting service. ",
       techstcak: ["HTML-CSS", "React", "Javascript"],
       github: "https://github.com/poorveshgediya/purvesh-s-portfolio",
-      live: "",
+      live: "https://purvesh-portfolio.netlify.app/",
     },
   ];
 
