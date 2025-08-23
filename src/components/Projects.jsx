@@ -6,7 +6,6 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Photo1 from "../photo/calculator.png";
 import Photo2 from "../photo/coffee.png";
-import Photo3 from "../photo/nft.png";
 import Photo4 from "../photo/portfolio.png";
 
 function Projects() {
@@ -32,7 +31,8 @@ function Projects() {
     {
       title: "Portfolio",
       image: Photo4,
-      discripction: "Built a personal portfolio using ReactJS with a focus on reusable components for efficient code structure. Deploy with the help of Netlify hosting service. ",
+      discripction:
+        "Built a personal portfolio using ReactJS with a focus on reusable components for efficient code structure. Deploy with the help of Netlify hosting service. ",
       techstcak: ["HTML-CSS", "React", "Javascript"],
       github: "https://github.com/poorveshgediya/purvesh-s-portfolio",
       live: "https://purvesh-portfolio.netlify.app/",
@@ -47,22 +47,28 @@ function Projects() {
         <div className={style.main_div}>
           {projectdata.map((project, index) => (
             <div key={index} className={style.project1}>
-              <h2>{project.title}</h2>
-              <img src={project.image} alt={`${project.title} Thumbnail`} />
-              <p>{project.discripction}</p>
-              <ul>
-                {project.techstcak.map((tech, index) => (
-                  <li key={index}>{tech}</li>
-                ))}
-              </ul>
-              <div className={style.links}>
-                <a href={project.github} target="_blank">
-                  GitHub - <FaGithub />
-                </a>
-                <a href={project.live} target="_blank">
-                  Link - <FaLink />
-                </a>
-              </div>
+              <fieldset className={style.fieldset}>
+                <legend>
+                  <i>{project.title}</i>
+                </legend>
+                <img src={project.image} alt={`${project.title} Thumbnail`} />
+                <p>{project.discripction}</p>
+                <div className={style.keypoints}>
+                  <ul>
+                    {project.techstcak.map((tech, index) => (
+                      <li key={index}>{tech}</li>
+                    ))}
+                  </ul>
+                  <div className={style.links}>
+                    <a href={project.github} target="_blank">
+                      GitHub - <FaGithub />
+                    </a>
+                    <a href={project.live} target="_blank">
+                      Link - <FaLink />
+                    </a>
+                  </div>
+                </div>
+              </fieldset>
             </div>
           ))}
         </div>

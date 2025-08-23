@@ -5,29 +5,23 @@
 .main_div{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 25px;
-    margin-top: 80px;
-    padding: 10px;
+    padding: 80px 0px;
     color: whitesmoke;
 }
 
 
 .project1{
-    /* height: 700px; */
+    height: 100%;
     width: 400px;
-    border: 2px solid #343b31;
     color: white;
     border-radius: 10px;
 }
 
-.project1 h2{
-    text-align: center;
-    margin: 10px;
-}
 .project1 img{
     padding: 20px;
-    height: 40%;
+    height: 250px;
     width: 100%;
 }
 .project1 p{
@@ -38,20 +32,40 @@
 .project1 ul{
     padding: 0px 35px ;
 }
-.links{
-    margin-top: 20px;
+.keypoints{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    row-gap: 10px;
 }
 .links a{
-    padding: 20px;
+    /* padding: 20px; */
     text-decoration: none;
     color: whitesmoke;
+}
+.fieldset{
+    padding: 10px;
+    border-top: 5px solid transparent;
+    border-radius: 0.5rem;
+    border: 2px solid #343b31;
+    cursor: pointer;
+}
+legend{
+    color: white;
+    padding: 0 10px 0 10px;
+    text-align:center;
+    font-size: 22px;
+    letter-spacing: 0.5px;
 }
 
 @media only screen and (max-width:500px){
     .project1{
-        margin: 20px;
+        margin: 0px 20px;
     }
     .project1 p{
         font-size: 14px;

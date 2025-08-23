@@ -1,26 +1,31 @@
 :root{
     --bg-color: #020312;
     --text-color: #fff;
-    /* --main-color: #eb4a4a; */
     --main-color: #d15a5a;
     --second-color: gray;
     --other-color: #12141c;
-    --h1-font: 5.2rem;
+    /* --h1-font: 5.2rem;
     --h2-font: 3.5rem;
-    --p-font: 1.1rem;
+    --p-font: 1.1rem; */
 }
 
 section{
     padding: 160px 16% 90px;
 }
 
-.box{
+.fieldset{
     padding: 45px;
     border-top: 5px solid transparent;
     border-radius: 0.5rem;
     border: 2px solid #343b31;
     cursor: pointer;
-    
+}
+legend{
+    color: black;
+    text-align:start;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
 }
 .box h3{
     font-size: 24px;
@@ -29,26 +34,31 @@ section{
     transition: all .40s ease;
 }
 .box p{
-    color: var(--second-color);
-    font-size: var(--p-font);
+    color: var(--text-color);
+    font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.5px;
     text-align: justify;
 }
 
-.cctlogo{
+.logo{
     height: 100px;
     width: 100px;
     background-color: whitesmoke;
     border-radius: 50%;
+    object-fit:fill;
 }
 
+.link{
+    width: 2px;
+    height: 2px;
+}
 @media only screen and (max-width: 500px){
     .experience{
         padding: 0px;
         margin: 70px 20px;
     }
-    .box{
+    fieldset{
         padding: 20px;
         margin-bottom: 25px;
     }

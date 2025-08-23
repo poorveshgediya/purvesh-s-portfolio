@@ -1,14 +1,17 @@
 .heading {
-  color: #c8a3a3;
+  color: #fff;
   letter-spacing: 2px;
-  padding-top: 50px;
-  padding-right: 50px;
 }
-
+.shortbio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
 .aboutsection {
   margin-top: 50px;
   display: flex;
-  justify-content: space-between;
 }
 
 .words {
@@ -21,7 +24,9 @@
 }
 .aboutme {
   font-size: 21px;
-  color: #f5f5f5e3;
+  letter-spacing: 2px;
+  line-height: 30px;
+  color: #fff;
 }
 .resume {
   color: whitesmoke;
@@ -38,32 +43,31 @@
 
 @media only screen and (max-width:800px){
   .aboutsection{
-    display: grid;
+    flex-direction: column;
   }
   .image {
     width: 35%;
     margin: 30px auto 0px auto;
   }
-  .heading {
-  font-size: 27px;
-  padding: 15px 5px 15px 25px;
+  .shortbio{
+    margin: 30px 0px 80px 0px;
+    padding: 0px 15px;
+    gap: 20px;
   }
   .aboutme {
-    line-height: 0px;
     font-size: 15px;
-    color: #f5f5f5e3;
-    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 25px;
   }
   .words {
     color: #7b3838;
   }
   .heading{
-    color: #f5f5f5e3;
+    font-size: 20px;
   }
 .resume{
-  font-size: 14px;
-  padding: 4px 7px;
-  margin-bottom: 20px;
+  font-size: 15px;
+  padding: 5px 15px;
 }  
 
 }

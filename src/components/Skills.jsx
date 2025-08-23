@@ -62,11 +62,11 @@ function Skills() {
           {skills.map((skill, index) => (
             <React.Fragment key={index}>
               <div className={style.box}>
-                <img
-                  className={style.skillimage}
-                  src={skill.image}
-                  alt={`${skill.name} Thumbnail`}
-                />
+                  <img
+                    className={style.skillimage}
+                    src={skill.image}
+                    alt={`${skill.name} Thumbnail`}
+                  />
                 <p className={style.skillname}>{skill.name}</p>
               </div>
             </React.Fragment>
