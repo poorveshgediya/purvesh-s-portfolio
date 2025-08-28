@@ -1,4 +1,5 @@
 .skills{
+  display: flex;
   padding: 100px 0px 200px 0px;
   backdrop-filter: blur(5px);
 }
@@ -13,7 +14,7 @@
 .skillimage {
   height: 50px;
   width: 50px;
-  border: 2px solid #343b31;
+  border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 10px;
   padding: 20px;
 }
@@ -36,7 +37,7 @@
 .skillname{
   margin-top: 5px;
   font-size: 16px;
-  color: #343b31;
+  color: rgba(255, 255, 255, 0.7);
   text-align: center;
   font-weight: bold;
 }
@@ -51,21 +52,23 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .skills{
+    overflow:hidden;
+  }
+  
   .skillscontent{
-    animation: skills 12s linear infinite;
+    animation: skills 15s linear infinite;
   }
   
 
   @keyframes skills {
     from {
-      transform: translateX(35%);
+      transform: translateX(50%);
     }
     to {
       transform: translateX(-100%);
     }
   }
-  .skills{
-    overflow:hidden;
-  }
+  
 }
   
