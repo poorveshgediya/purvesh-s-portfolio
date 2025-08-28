@@ -13,7 +13,7 @@ import {
 
 function Footer() {
   return (
-    <div>
+    <section id="footer">
       <footer className={style.soc_media}>
         <a href="https://github.com/poorveshgediya" target="_blank">
           <FaGithub />
@@ -37,7 +37,7 @@ function Footer() {
           <FaPinterest />
         </a>
       </footer>
-    </div>
+    </section>
   );
 }
 

@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import style from "../style/experience.module.css";
 import logo1 from "../photo/cct.png";
 import logo2 from "../photo/cognifyz.png";
@@ -10,10 +8,11 @@ import logo4 from "../photo/vara.svg";
 const experience = [
   {
     logo: logo4,
-    company:"Vara Network",
-    position:"(August 2025 - Present)",
+    company: "Vara Network",
+    position: "(August 2025 - Present)",
     role: "Ambassador Program",
-    description:"As a ambassador of vara network i'm contributing to growing ecosystem & make a content creation and complete my task and also sharing educational content about web3.",
+    description:
+      "As a ambassador of vara network i'm contributing to growing ecosystem & make a content creation and complete my task and also sharing educational content about web3.",
   },
   {
     logo: logo3,
@@ -44,43 +43,42 @@ const experience = [
 function Experience() {
   return (
     <>
-      <Navbar />
-      <br />
       <section className={style.experience} id="experience">
-        <div className={style.experiencecontent}>
-          {experience.map((experience, index) => (
-            <React.Fragment key={index}>
-              <fieldset className={style.fieldset}>
-                <legend><i>{experience.role}</i></legend>
-                <div className={style.box}>
-                  <div className={style.topcontent}>
-                    <img
-                      className={style.logo}
-                      src={experience.logo}
-                      alt="Company Logo"
-                    />
-                    <div className={style.companydetails}>
-                      <h3>{experience.company}</h3>
-                      <h4>{experience.position}</h4>
-                    </div>
+        {experience.map((experience, index) => (
+          <React.Fragment key={index}>
+            <fieldset className={style.fieldset}>
+              <legend className={style.legend}>
+                <i>{experience.role}</i>
+              </legend>
+              <div className={style.box}>
+                <div className={style.topcontent}>
+                  <img
+                    className={style.logo}
+                    src={experience.logo}
+                    alt="Company Logo"
+                  />
+                  <div className={style.companydetails}>
+                    <h3 className={style.companyname}>{experience.company}</h3>
+                    <h4 className={style.companyposition}>
+                      {experience.position}
+                    </h4>
                   </div>
-                  <br />
-                  <p>
-                    {experience.description.split("\n").map((line, idx) => (
-                      <span key={idx}>
-                        {line}
-                        <br />
-                      </span>
-                    ))}
-                  </p>
                 </div>
-              </fieldset>
-              <br />
-            </React.Fragment>
-          ))}
-        </div>
+                <br />
+                <p className={style.positiondescription}>
+                  {experience.description.split("\n").map((line, idx) => (
+                    <span key={idx}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
+                </p>
+              </div>
+            </fieldset>
+            <br />
+          </React.Fragment>
+        ))}
       </section>
-      <Footer />
     </>
   );
 }

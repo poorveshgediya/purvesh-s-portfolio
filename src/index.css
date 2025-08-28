@@ -1,0 +1,16 @@
+::-webkit-scrollbar{
+    display: none;
+  }
+  
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: "Cascadia Code", sans-serif;
+    background-image: url("https://i.pinimg.com/1200x/f9/ae/4e/f9ae4e387da503b1ac1a405e92d965f1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  

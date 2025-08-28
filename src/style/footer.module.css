@@ -1,5 +1,4 @@
-
-  .soc_media {
+.soc_media {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -9,42 +8,17 @@
     gap: 25px;
     padding: 5px 0;
     z-index: 1000;
+    background:rgba(0,0,0,0.09);
+    backdrop-filter: blur(10px);
   }
 
   .soc_media a {
     padding: 10px 13px;
+    display:flex;
+    flex-direction: column;
     color: whitesmoke;
     transition: color 0.3s ease;
     border-radius: 5px;
-  }
-  
-  .soc_media a {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .soc_media a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: whitesmoke;
-    transition: transform 0.20s ease-out;
-  }
-  
-  .soc_media a:hover::after {
-    transform: scaleX(1);
-  }
-  
-  .soc_media a::after {
-    transform-origin: bottom right;
-  }
-  
-  .soc_media a:hover::after {
-    transform-origin: bottom left;
   }
 
   @media only screen and (max-width: 400px) {

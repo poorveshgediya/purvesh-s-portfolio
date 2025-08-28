@@ -2,15 +2,11 @@ import React, { useState } from "react";
 import style from "../style/About.module.css";
 import { Typewriter } from "react-simple-typewriter";
 import profile1 from "../photo/Profile1.jpg";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 
-function introduction() {
+function About() {
   return (
     <>
-      <div>
-        <Navbar />
-        <br />
+      <section id="about">
         <div className={style.aboutsection}>
           <img className={style.image} src={profile1} alt="" />
           <div className={style.shortbio}>
@@ -49,10 +45,10 @@ function introduction() {
             </a>
           </div>
         </div>
-        <Footer />
-      </div>
+        <br />
+      </section>
     </>
   );
 }
 
-export default introduction;
+export default About;

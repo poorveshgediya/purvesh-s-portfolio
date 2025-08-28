@@ -1,32 +1,31 @@
 import React from 'react'
 import style from "../style/navbar.module.css";
-import { Link } from 'react-router-dom';
-function navbar() {
 
+function Navbar() {
 
   return (
     <>
-    <div>
+    <section id="mainnavbar">
         <div className={style.navbar}>
           <li className={style.header}>
-            <Link to="/About">About</Link>
+            <a className={style.navbarlink} href="#about">About</a>
           </li>
           <li className={style.header}>
-            <Link to="/Projects">Projects</Link>
+            <a className={style.navbarlink} href="#projects">Projects</a>
           </li>
           <li className={style.header}>
-            <Link to="/Experience">Experience</Link>
+            <a className={style.navbarlink} href="#experience">Experience</a>
           </li>
           <li className={style.header}>
-            <Link to="/Skills ">Skills</Link>
+            <a className={style.navbarlink} href="#skills">Skills</a>
           </li>
           <li className={style.header}>
-            <Link to="/Resume">Resume</Link>
+            <a className={style.navbarlink} href="#">Resume</a>
           </li>
         </div>
-    </div>
+    </section>
     </>
   )
 }
 
-export default navbar
+export default Navbar

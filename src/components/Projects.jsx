@@ -1,9 +1,6 @@
 import React from "react";
 import style from "../style/Projects.module.css";
-import { FaAddressBook, FaGithub, FaLink } from "react-icons/fa6";
-import { FaAnchor } from "react-icons/fa";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import { FaGithub, FaLink } from "react-icons/fa6";
 import Photo1 from "../photo/calculator.png";
 import Photo2 from "../photo/coffee.png";
 import Photo4 from "../photo/portfolio.png";
@@ -41,18 +38,16 @@ function Projects() {
 
   return (
     <>
-      <div>
-        <Navbar />
-        <br />
+      <section id="projects">
         <div className={style.main_div}>
           {projectdata.map((project, index) => (
             <div key={index} className={style.project1}>
               <fieldset className={style.fieldset}>
-                <legend>
+                <legend className={style.legend}>
                   <i>{project.title}</i>
                 </legend>
-                <img src={project.image} alt={`${project.title} Thumbnail`} />
-                <p>{project.discripction}</p>
+                <img className={style.projectimg} src={project.image} alt={`${project.title} Thumbnail`} />
+                <p className={style.projectdiscripction}>{project.discripction}</p>
                 <div className={style.keypoints}>
                   <ul>
                     {project.techstcak.map((tech, index) => (
@@ -72,8 +67,7 @@ function Projects() {
             </div>
           ))}
         </div>
-        <Footer />
-      </div>
+      </section>
     </>
   );
 }

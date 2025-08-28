@@ -1,7 +1,5 @@
 import React from "react";
 import style from "../style/Skills.module.css";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import problemsolving from "../photo/problemsolving.png";
 import contentcreation from "../photo/content.png";
 import Htmlcss from "../photo/html-css.png";
@@ -55,26 +53,22 @@ const skills = [
 function Skills() {
   return (
     <>
-      <div>
-        <Navbar />
-
+      <section id="skills" className={style.skills}>
         <div className={style.skillscontent}>
           {skills.map((skill, index) => (
             <React.Fragment key={index}>
               <div className={style.box}>
-                  <img
-                    className={style.skillimage}
-                    src={skill.image}
-                    alt={`${skill.name} Thumbnail`}
-                  />
+                <img
+                  className={style.skillimage}
+                  src={skill.image}
+                  alt={`${skill.name} Thumbnail`}
+                />
                 <p className={style.skillname}>{skill.name}</p>
               </div>
             </React.Fragment>
           ))}
         </div>
-
-        <Footer />
-      </div>
+      </section>
     </>
   );
 }

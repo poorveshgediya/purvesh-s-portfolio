@@ -1,44 +1,49 @@
-:root{
-    --bg-color: #020312;
-    --text-color: #fff;
-    --main-color: #d15a5a;
-    --second-color: gray;
-    --other-color: #12141c;
-    /* --h1-font: 5.2rem;
-    --h2-font: 3.5rem;
-    --p-font: 1.1rem; */
+.experience{
+    padding: 160px 16% 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    backdrop-filter: blur(10px);
 }
-
-section{
-    padding: 160px 16% 90px;
+.box{
+    display: flex;
+    flex-direction: column;
 }
-
 .fieldset{
     padding: 45px;
     border-top: 5px solid transparent;
     border-radius: 0.5rem;
     border: 2px solid #343b31;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
-legend{
+.fieldset:hover{
+    transform: scale(1.05);
+}
+.legend{
     color: black;
     text-align:start;
     font-size: 22px;
     letter-spacing: 0.5px;
     font-weight: bold;
 }
-.box h3{
-    font-size: 24px;
-    font-weight: 600;
-    margin: 15px 0;
-    transition: all .40s ease;
+.topcontent{
+    display: flex;
+    gap: 50px;
 }
-.box p{
-    color: var(--text-color);
+.companydetails{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.companyname, .companyposition{
+    margin: 0px;
+}
+.positiondescription{
+    color: #fff;
     font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 0.5px;
     text-align: justify;
+    margin: 5px;
 }
 
 .logo{
@@ -53,7 +58,7 @@ legend{
     width: 2px;
     height: 2px;
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 750px){
     .experience{
         padding: 0px;
         margin: 70px 20px;
@@ -62,14 +67,20 @@ legend{
         padding: 20px;
         margin-bottom: 25px;
     }
-    .topcontent{
-        display: flex;
-        gap: 20px;
-    }
-    .box p{
-        line-height:20px;
+    .positiondescription{
         font-size: 13px;
-        text-align: justify;
     }
     
+}
+@media only screen and (max-width: 450px){
+    .topcontent{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .fieldset{
+        padding: 15px;
+    }
+    .legend{
+        font-size: 20px;
+    }
 }
