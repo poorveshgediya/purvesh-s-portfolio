@@ -45,7 +45,6 @@ function About() {
             </a>
           </div>
         </div>
-        <br />
       </section>
     </>
   );

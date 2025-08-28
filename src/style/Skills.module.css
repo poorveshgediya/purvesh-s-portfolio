@@ -1,7 +1,6 @@
 .skills{
   padding: 100px 0px 200px 0px;
-  backdrop-filter: blur(10px);
-  margin-top: 15px;
+  backdrop-filter: blur(5px);
 }
 .skillscontent {
   display: flex;
@@ -55,6 +54,7 @@
   .skillscontent{
     animation: skills 12s linear infinite;
   }
+  
 
   @keyframes skills {
     from {
@@ -63,6 +63,9 @@
     to {
       transform: translateX(-100%);
     }
+  }
+  .skills{
+    overflow:hidden;
   }
 }
   
