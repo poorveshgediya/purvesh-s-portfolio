@@ -1,7 +1,7 @@
 .soc_media {
     position: fixed;
     bottom: 0;
-    left: 0;
+    max-width: 912px;
     width: 100%;
     display: flex;
     justify-content: center;

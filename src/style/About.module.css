@@ -1,76 +1,81 @@
+.aboutsection {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  grid-template-areas: "text image";
+}
 .heading {
+  margin: 0;
   color: #fff;
   letter-spacing: 2px;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 .shortbio{
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  gap: 20px;
+  grid-area: text;
 }
-.aboutsection {
-  margin-top: 50px;
-  display: flex;
-  backdrop-filter: blur(5px);
+.shortbio h3:nth-child(even){
+  font-weight: 400;
+  margin: 12px 0 0 0;
+  font-size: 1rem;
+  line-height: 24px;
 }
-
-.words {
-  color: #d15a5a;
-}
-.image {
-  width: 18%;
-  margin: 50px 80px;
-  border-radius: 50%;
-}
-.aboutme {
-  padding-right: 20px;
+.ptag{
+  margin:0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
   text-align: justify;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
-  line-height: 30px;
+  color: #a19c9b;
+}
+.ptaglasttwo{
+  margin: 10px 0 0 0;
+}
+.shortbio p span{
   color: #fff;
 }
-.resume {
-  color: whitesmoke;
-  background-color: #d15a5a;
+span a{
+  color: #00adb5;
   text-decoration: none;
-  font-size: 1.2rem;
-  padding: 7px 14px;
-  border-radius: 10px;
+  cursor: pointer;
 }
-.resume:hover {
-  color: whitesmoke;
-  background-color: #c8a3a3;
+.words {
+  color: #00adb5;
 }
-
-@media only screen and (max-width:800px){
-  .aboutsection{
-    flex-direction: column;
+.imgdiv{
+  position: relative;
+  grid-area: image;
+}
+.image {
+  width: 250px;
+  height: 300px;
+  transform: rotatez(-3deg);
+  position: relative;
+  border-radius: 8px;
+  z-index: 2;
+}
+.imgbackground{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 300px;
+  background-color: #00adb5;
+  border-radius: 8px;
+  z-index: 1;
+}
+@media only screen and (max-width:650px){
+  .aboutsection {
+    grid-template-columns: 1fr;
+    grid-template-areas: "image" "text";
+    gap: 10px;
   }
-  .image {
-    width: 35%;
-    margin: 30px auto 0px auto;
+  .imgdiv{
+    justify-self: center;
   }
   .shortbio{
-    margin: 30px 0px 80px 0px;
-    padding: 0px 15px;
-    gap: 20px;
+    padding: 10px;
   }
-  .aboutme {
-    font-size: 15px;
-    letter-spacing: 1px;
-    line-height: 25px;
-  }
-  .words {
-    color: #7b3838;
-  }
-  .heading{
-    font-size: 20px;
-  }
-.resume{
-  font-size: 15px;
-  padding: 5px 15px;
-}  
-
 }

@@ -1,24 +1,30 @@
 import React from "react";
 import style from "../style/Skills.module.css";
-import problemsolving from "../photo/problemsolving.png";
-import contentcreation from "../photo/content.png";
-import Htmlcss from "../photo/html-css.png";
-import javascript from "../photo/java-script.png";
-import react from "../photo/react.png";
-import php from "../photo/php.png";
-import mysql from "../photo/mysql.png";
-import web3 from "../photo/web3.png";
-import blockchain from "../photo/blockchain.png";
+import html from "./../photo/html.svg";
+import css from "./../photo/css.svg";
+import tailwind from "./../photo/tailwind.svg";
+import bootstrap from "./../photo/bootstrap.svg";
+import javascript from "./../photo/javascript.svg";
+import react from "./../photo/reactjs.svg";
+import mongo from "./../photo/mongo.svg";
+import nodejs from "./../photo/nodejs.svg";
 
 const skills = [
   {
-    image: problemsolving,
-    name: "Problem-Solving",
+    image: html,
+    name: "HTML",
   },
-
   {
-    image: Htmlcss,
-    name: "HTML & CSS",
+    image: css,
+    name: "CSS",
+  },
+  {
+    image: tailwind,
+    name: "tailwind",
+  },
+  {
+    image: bootstrap,
+    name: "bootstrap",
   },
   {
     image: javascript,
@@ -29,33 +35,24 @@ const skills = [
     name: "ReactJS",
   },
   {
-    image: php,
-    name: "PHP",
+    image: nodejs,
+    name: "NodeJS",
   },
   {
-    image: mysql,
-    name: "MySql",
-  },
-  {
-    image: web3,
-    name: "Web3",
-  },
-  {
-    image: blockchain,
-    name: "Blockchain",
-  },
-  {
-    image: contentcreation,
-    name: "Content-Creation",
+    image: mongo,
+    name: "MongoDB",
   },
 ];
+
+const repeatedSkills = [...skills, ...skills]
 
 function Skills() {
   return (
     <>
       <section id="skills" className={style.skills}>
+        <h3>Tools that I have used</h3>
         <div className={style.skillscontent}>
-          {skills.map((skill, index) => (
+          {repeatedSkills.map((skill, index) => (
             <React.Fragment key={index}>
               <div className={style.box}>
                 <img

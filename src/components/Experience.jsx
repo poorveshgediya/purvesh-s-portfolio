@@ -1,13 +1,22 @@
 import React from "react";
 import style from "../style/experience.module.css";
-import logo1 from "../photo/cct.png";
-import logo2 from "../photo/cognifyz.png";
-import logo3 from "../photo/ascendEX.jpg";
-import logo4 from "../photo/vara.svg";
+import cct from "../photo/cct.png";
+import cognifyz from "../photo/cognifyz.png";
+import ascendex from "../photo/ascendEX.jpg";
+import vara from "../photo/vara.svg";
+import coindcx from "../photo/coindcx.png";
 
 const experience = [
   {
-    logo: logo4,
+    logo: coindcx,
+    company: "CoinDCX",
+    position: "(September 2025 - Present)",
+    role: "Maxis Program",
+    description:
+      "As a Maxis at CoinDCX i'm promoting the CoinDCX exchange by making educational content and educate people about crypto and web3.",
+  },
+  {
+    logo: vara,
     company: "Vara Network",
     position: "(August 2025 - Present)",
     role: "Ambassador Program",
@@ -15,7 +24,7 @@ const experience = [
       "As a ambassador of vara network i'm contributing to growing ecosystem & make a content creation and complete my task and also sharing educational content about web3.",
   },
   {
-    logo: logo3,
+    logo: ascendex,
     company: "AscendEX",
     position: "(March 2025 - Present)",
     role: "Affiliate Program",
@@ -23,15 +32,15 @@ const experience = [
       "Collaborating with AscendEX’s affiliate program to promote the platform among indian audiences. Creating and sharing educational content across social platforms to onboard new users.",
   },
   {
-    logo: logo1,
+    logo: cct,
     company: "Calanjiyam Consultancies & Technologies",
     position: "(April - June 2025)",
     role: "Web Developer Intern",
     description:
-      "• Contributing in our group project which is “ web based coffee billing system ” \n • I’m handle the “ product management module ”.\n • Created UI for display product with details and also can add manually and using HTML-CSS, JavaScript, PHP, Mysql.",
+      "Contributing in our group project which is web based coffee billing system. I’m handle the product management module Created UI for display product with details and also can add manually and using HTML-CSS, JavaScript, PHP, Mysql.",
   },
   {
-    logo: logo2,
+    logo: cognifyz,
     company: "Cognifyz Technologies",
     position: "(September - October 2024)",
     role: "Web Developer Intern",
@@ -43,41 +52,39 @@ const experience = [
 function Experience() {
   return (
     <>
-      <section className={style.experience} id="experience">
-        {experience.map((experience, index) => (
-          <React.Fragment key={index}>
-            <fieldset className={style.fieldset}>
-              <legend className={style.legend}>
-                <i>{experience.role}</i>
-              </legend>
-              <div className={style.box}>
-                <div className={style.topcontent}>
-                  <img
-                    className={style.logo}
-                    src={experience.logo}
-                    alt="Company Logo"
-                  />
-                  <div className={style.companydetails}>
-                    <h3 className={style.companyname}>{experience.company}</h3>
-                    <h4 className={style.companyposition}>
-                      {experience.position}
-                    </h4>
+      <section id="experience">
+        <div style={{margin: "60px 0px"}}>
+          <h3>Experience</h3>
+          <div className={style.mainDiv}>
+            {experience.map((experience, index) => (
+              <React.Fragment key={index}>
+                <div className={style.mainexperiencecard}>
+                  <h3 className={style.companytitle}>{experience.role}</h3>
+                  <div className={style.box}>
+                    <div className={style.sidecontent}>
+                      <img
+                        className={style.logo}
+                        src={experience.logo}
+                        alt="Company Logo"
+                      />
+                    </div>
+                    <div className={style.companydetails}>
+                      <h3 className={style.companyname}>
+                        {experience.company}
+                      </h3>
+                      <h4 className={style.companyposition}>
+                        {experience.position}
+                      </h4>
+                      <p className={style.positiondescription}>
+                        {experience.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <br />
-                <p className={style.positiondescription}>
-                  {experience.description.split("\n").map((line, idx) => (
-                    <span key={idx}>
-                      {line}
-                      <br />
-                    </span>
-                  ))}
-                </p>
-              </div>
-            </fieldset>
-            <br />
-          </React.Fragment>
-        ))}
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
       </section>
     </>
   );

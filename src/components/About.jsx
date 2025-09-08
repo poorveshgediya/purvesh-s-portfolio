@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import style from "../style/About.module.css";
 import { Typewriter } from "react-simple-typewriter";
-import profile1 from "../photo/Profile1.jpg";
+import profile1 from "../photo/Profile.jpg";
 
 function About() {
   return (
     <>
       <section id="about">
         <div className={style.aboutsection}>
-          <img className={style.image} src={profile1} alt="" />
           <div className={style.shortbio}>
             <h1 className={style.heading}>
               Hey, I'm
@@ -29,20 +28,19 @@ function About() {
                 />
               </span>
             </h1>
-            <p className={style.aboutme}>
-              Hi, my self Purvesh Gediya from Rajkot. Completed my B.Tech in CSE
-              (blockchain) field at Parul University. Frontend Developer skilled
-              in HTML/CSS, JavaScript, and ReactJS, with a focus on building
-              clean and responsive user interfaces. exploring blockchain
-              technologies and passionate about learning new tools...
-            </p>
-            <a
-              href="/Purvesh_Gediya-Resume.pdf"
-              download
-              className={style.resume}
-            >
-              Resume ⬇
-            </a>
+              <h3>About Me</h3>
+              <p className={style.ptag}>
+                Hello! I'm a developer from <span>Gujarat, India</span>. I love to enjoy
+                programming and exploring technology specially <span>web3</span>. Completed one internship & currently doing <span>FSD</span> course at PWSkills.
+              </p>
+            <h3>What i do?</h3>
+            <p className={style.ptag}>Completed one group project during internship & working on my personal project. I'm super active on <span>X</span> where I make content about web3 and crypto.</p>
+            <p className={`${style.ptag} ${style.ptaglasttwo}`}>I'm an Ambassador at <span>#VaraNetwork</span> & Maxis at <span>#CoinDCX</span>.</p>
+            <p className={`${style.ptag} ${style.ptaglasttwo}`}>I'm <span>open to work</span>, freelance, or collaborate. <span><a href="mailto:poorveshgediya@gmail.com">Contact Me</a></span> </p>
+          </div>
+          <div className={style.imgdiv}>
+            <img className={style.image} src={profile1} alt="" />
+            <span className={style.imgbackground} />
           </div>
         </div>
       </section>

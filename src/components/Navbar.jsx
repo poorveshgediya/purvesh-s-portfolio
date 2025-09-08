@@ -1,31 +1,36 @@
-import React from 'react'
+import React from "react";
 import style from "../style/navbar.module.css";
+import p from "./../photo/p.svg";
 
 function Navbar() {
-
   return (
     <>
-    <section id="mainnavbar">
+      <section id="mainnavbar">
         <div className={style.navbar}>
-          <li className={style.header}>
-            <a className={style.navbarlink} href="#about">About</a>
-          </li>
-          <li className={style.header}>
-            <a className={style.navbarlink} href="#projects">Projects</a>
-          </li>
-          <li className={style.header}>
-            <a className={style.navbarlink} href="#experience">Experience</a>
-          </li>
-          <li className={style.header}>
-            <a className={style.navbarlink} href="#skills">Skills</a>
-          </li>
-          <li className={style.header}>
-            <a className={style.navbarlink} href="#">Resume</a>
-          </li>
+          <div>
+            <img className={style.plogo} src={p} alt="p" />
+          </div>
+          <div className={style.navbuttons}>
+            <li className={style.header}>
+              <a className={style.navbarlink} href="#">
+                Home
+              </a>
+            </li>
+            <li className={style.header}>
+              <a className={style.navbarlink} href="#projects">
+                Projects
+              </a>
+            </li>
+            <li className={style.header}>
+              <a className={style.navbarlink} href="#">
+                Blog
+              </a>
+            </li>
+          </div>
         </div>
-    </section>
+      </section>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

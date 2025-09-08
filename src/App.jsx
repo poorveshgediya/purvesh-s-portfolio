@@ -8,14 +8,14 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-      <>
-      <Navbar/>
-      <About/>
-      <Projects/>
-      <Experience/>
-      <Skills/>
-      <Footer/>
-      </>
+    <div style={{ maxWidth: "912px", margin: "0 auto"}}>
+      <Navbar />
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Footer />
+    </div>
   );
 }
 

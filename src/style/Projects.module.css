@@ -1,76 +1,76 @@
+.title{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 60px 0 40px 0;
+}
 .main_div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  color: #fff;
+}
+
+.projectimg {
+  height: 230px;
+  width: 100%;
+  border-radius: 5px;
+}
+.projecttitle{
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 10px 0 0 0;
+}
+.techstcak{
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #00adb5;
+  margin: 10px 0 0 0;
+}
+
+.projectdiscripction {
+  margin: 10px 0 0 0;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: justify;
+  color: #a19c9b;
+}
+.links {
+  margin: 10px 0 0 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 80px 0px;
-  color: whitesmoke;
-  backdrop-filter: blur(5px);
+  gap: 20px;
+  font-size: 0.88rem;
+}
+.links a{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+.links span{
+  color: #00adb5;
+  font-weight: 400;
+}
 
-  .project1 {
-    height: 100%;
-    width: 400px;
-    color: white;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-
-    .fieldset {
-      padding: 20px;
-      border-top: 5px solid transparent;
-      border-radius: 0.5rem;
-      border: 2px solid #343b31;
-      cursor: pointer;
-
-      .projectimg {
-        height: 230px;
-        width: 100%;
-      }
-
-      .projectdiscripction {
-        padding: 0px 15px 15px 15px;
-        font-size: 16px;
-        text-align: justify;
-      }
-
-      .keypoints {
-        display: flex;
-        justify-content: space-around;
-
-        .links {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          row-gap: 10px;
-        }
-        .links a {
-          text-decoration: none;
-          color: whitesmoke;
-        }
-      }
-      .legend {
-        text-align: center;
-        font-size: 18px;
-        padding: 10px;
-      }
-    }
-  }
-  .project1:hover {
+  .project:hover {
     transform: translateY(-20px);
   }
 
-  .projectdiscripction {
-    padding: 0px 15px 15px 15px;
-    font-size: 16px;
-    text-align: justify;
+@media only screen and (max-width: 650px) {
+  .main_div {
+    grid-template-columns: 1fr;
+  }
+  .project{
+    padding: 0 80px;
   }
 }
-
 @media only screen and (max-width: 500px) {
-  .project1 {
-    margin: 0px 20px;
+  .project{
+    padding: 0 40px;
   }
-  .projectdiscripction{
-    font-size: 12px;
-    text-align: justify;
+}
+@media only screen and (max-width: 400px) {
+  .project{
+    padding: 0 20px;
   }
 }

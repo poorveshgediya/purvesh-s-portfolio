@@ -1,63 +1,62 @@
-.experience{
-    padding: 160px 16% 50px;
+h3{
+    margin: 0px 0 40px 0;
+}
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.mainexperiencecard{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    backdrop-filter: blur(5px);
 }
 .box{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
 }
-.fieldset{
-    padding: 45px;
-    border-top: 5px solid transparent;
-    border-radius: 0.5rem;
-    border: 2px solid #343b31;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+.companytitle{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
 }
-.fieldset:hover{
-    transform: scale(1.05);
-}
-.legend{
-    color: black;
-    text-align:start;
-    font-size: 22px;
-    letter-spacing: 0.5px;
-    font-weight: bold;
-}
-.topcontent{
-    display: flex;
-    gap: 50px;
-}
-.companydetails{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.companyname, .companyposition{
-    margin: 0px;
-}
-.positiondescription{
-    color: #fff;
-    font-size: 18px;
-    text-align: justify;
-    margin: 5px;
-}
-
 .logo{
     height: 100px;
     width: 100px;
     background-color: whitesmoke;
-    border-radius: 50%;
+    border-radius: 5px;
     object-fit:fill;
 }
-
-.link{
-    width: 2px;
-    height: 2px;
+.companydetails{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: justify;
+    padding: 5px;
 }
+.companyname{
+    margin: 0px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.companyposition{
+    margin: 0;
+    font-size: 0.75rem;
+    color: #00adb5;
+    font-weight: 400;
+}
+.positiondescription{
+    color:#a19c9b;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    margin: 0;
+}
+
 @media only screen and (max-width: 750px){
     .experience{
         padding: 70px 20px;
@@ -67,7 +66,7 @@
         margin-bottom: 25px;
     }
     .positiondescription{
-        font-size: 13px;
+        font-size: 1rem;
     }
     
 }
@@ -80,6 +79,6 @@
         padding: 15px;
     }
     .legend{
-        font-size: 20px;
+        font-size: 1.5rem;
     }
 }
