@@ -44,35 +44,34 @@ span a{
 .words {
   color: #00adb5;
 }
-.imgdiv{
-  position: relative;
-  grid-area: image;
-}
-.image {
-  width: 250px;
-  height: 300px;
-  transform: rotatez(-3deg);
-  position: relative;
-  border-radius: 8px;
-  z-index: 2;
-}
 .imgbackground{
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 250px;
   height: 300px;
   background-color: #00adb5;
   border-radius: 8px;
+}
+.image {
+  height: 300px;
+  width: 250px;
+  object-fit: fill;
   z-index: 1;
+  border-radius: 8px;
+  transform: rotatez(-3deg);
+}
+@media only screen and (max-width:900px){
+  .aboutsection {
+    margin: 0 20px;
+  }
 }
 @media only screen and (max-width:650px){
   .aboutsection {
+    margin: 0 10px;
     grid-template-columns: 1fr;
     grid-template-areas: "image" "text";
     gap: 10px;
   }
-  .imgdiv{
+  .imgbackground{
     justify-self: center;
   }
   .shortbio{

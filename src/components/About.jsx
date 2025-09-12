@@ -38,9 +38,9 @@ function About() {
             <p className={`${style.ptag} ${style.ptaglasttwo}`}>I'm an Ambassador at <span>#VaraNetwork</span> & Maxis at <span>#CoinDCX</span>.</p>
             <p className={`${style.ptag} ${style.ptaglasttwo}`}>I'm <span>open to work</span>, freelance, or collaborate. <span><a href="mailto:poorveshgediya@gmail.com">Contact Me</a></span> </p>
           </div>
-          <div className={style.imgdiv}>
+          <div className={style.imgbackground}>
             <img className={style.image} src={profile1} alt="" />
-            <span className={style.imgbackground} />
+            {/* <div className={style.imgbackground}></div> */}
           </div>
         </div>
       </section>

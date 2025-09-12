@@ -40,7 +40,7 @@ function Projects() {
 
   return (
     <>
-      <section id="projects">
+      <section id="projects" className={style.projectsection}>
         <h3 className={style.title}>Projects</h3>
         <div className={style.main_div}>
           {projectdata.map((project, index) => (

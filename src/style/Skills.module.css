@@ -6,6 +6,7 @@
   font-weight: 500;
 }
 .skillscontent {
+  margin-top: 15px;
   display: flex;
   align-items:flex-start;
   gap: 10px;
@@ -44,24 +45,9 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
-  /* .skills{
-    overflow:hidden;
+@media only screen and (max-width: 900px) {
+  .skills >h3{
+    margin: 0 20px;
   }
-  
-  .skillscontent{
-    animation: skills 15s linear infinite;
-  }
-  
-
-  @keyframes skills {
-    from {
-      transform: translateX(50%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-   */
 }
   
