@@ -4,6 +4,8 @@ import { FaGithub, FaLink } from "react-icons/fa6";
 import Photo1 from "../photo/calculate.png";
 import Photo2 from "../photo/coffee.png";
 import Photo4 from "../photo/portfolio.png";
+import Photo5 from "../photo/tic-tac-toe.png";
+import Photo6 from "../photo/WeatherWebApp.png";
 import livepreview from "../photo/live-preview.svg";
 import github from "../photo/github.svg";
 
@@ -36,6 +38,24 @@ function Projects() {
       github: "https://github.com/poorveshgediya/purvesh-s-portfolio",
       live: "https://purvesh-portfolio.netlify.app/",
     },
+    {
+      title: "Tic Tac Toe Game",
+      image: Photo5,
+      discripction:
+        "A simple, interactive web game for two players (X and O) on a 3x3 grid. Aim for three-in-a-row—horizontally, vertically, or diagonally—to claim victory!",
+      techstcak: "HTML-CSS / JavaScript",
+      github: "https://github.com/poorveshgediya/Tic-Tac-Toe.git",
+      live: "https://tic-tac-toe-purveshgediya.netlify.app/",
+    },
+    {
+      title:" Weather App",
+      image: Photo6,
+      discripction:
+        "A web application that provides real-time weather information for any location using the OpenWeatherMap API. Users can search for cities to view current weather conditions, including temperature, humidity, and wind speed.",
+      techstcak: "HTML-CSS / JavaScript / API",
+      github:"https://github.com/poorveshgediya/WeatherWebApp",
+      live: "https://weatherwebappbypurvesh.netlify.app/",
+    }
   ];
 
   return (

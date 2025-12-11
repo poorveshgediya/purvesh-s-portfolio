@@ -7,8 +7,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 function App() {
-  return (
-    <div style={{ maxWidth: "912px", margin: "0 auto"}}>
+  
+  return (  
+    <div className="MainDiv" style={{ maxWidth: "912px", margin: "0 auto"}}>
       <Navbar />
       <About />
       <Skills />

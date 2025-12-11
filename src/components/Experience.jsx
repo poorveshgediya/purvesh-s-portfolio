@@ -1,11 +1,11 @@
 import React from "react";
-// import style from "../style/experience.module.css";
 import '../style/experience.css';
 import cct from "../photo/cct.png";
 import cognifyz from "../photo/cognifyz.png";
 import ascendex from "../photo/ascendEX.jpg";
 import vara from "../photo/vara.svg";
 import coindcx from "../photo/coindcx.png";
+import "tailwindcss";
 
 const experience = [
   {
@@ -21,13 +21,6 @@ const experience = [
     role: "Ambassador Program (August 2025 - Present)",
     description:
       "As a ambassador of vara network i'm contributing to growing ecosystem & make a content creation and complete my task and also sharing educational content about web3.",
-  },
-  {
-    logo: ascendex,
-    company: "AscendEX",
-    role: "Affiliate Program (March 2025 - Present)",
-    description:
-      "Collaborating with AscendEX’s affiliate program to promote the platform among indian audiences. Creating and sharing educational content across social platforms to onboard new users.",
   },
   {
     logo: cct,
@@ -51,22 +44,22 @@ function Experience() {
     <h2 className="experienceheading mt-20 mb-10 font-1rem">Experience</h2>
       <section className="experiencesection grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 pb-20">
         {experience.map((experience, index) => (
-            <div key={index} class="flex items-start gap-3 hover:translate-y-[-10px]">
-              <div class="flex-shrink-0">
+            <div key={index} className="flex items-start gap-3 hover:translate-y-[-10px]">
+              <div className="flex-shrink-0">
                 <img
                   alt="Company Logo"
-                  class="w-12 h-12 rounded-full object-fill bg-[#fff]"
+                  className="w-12 h-12 rounded-full object-fill bg-[#fff]"
                   src={experience.logo}
                 />
               </div>
-              <div class="flex-grow">
-                <h2 class="text-[#fff] text-1rem font-bold:500">
+              <div className="flex-grow">
+                <h2 className="text-[#fff] text-1rem font-bold:500">
                   {experience.company}
                 </h2>
-                <h3 class="text-[#00adb5] text-[0.88rem] font-bold:400">
+                <h3 className="text-[#00adb5] text-[0.88rem] font-bold:400">
                   {experience.role}
                 </h3>
-                <p class="text-[#a19c9b] text-[0.88rem] mt-[10px] text-justify">
+                <p className="text-[#a19c9b] text-[0.88rem] mt-[10px] text-justify">
                   {experience.description}
                 </p>
               </div>
