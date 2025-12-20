@@ -6,6 +6,7 @@ import Photo2 from "../photo/coffee.png";
 import Photo4 from "../photo/portfolio.png";
 import Photo5 from "../photo/tic-tac-toe.png";
 import Photo6 from "../photo/WeatherWebApp.png";
+import Photo7 from "../photo/DailyDadJoke.png";
 import livepreview from "../photo/live-preview.svg";
 import github from "../photo/github.svg";
 
@@ -48,13 +49,22 @@ function Projects() {
       live: "https://tic-tac-toe-purveshgediya.netlify.app/",
     },
     {
-      title:" Weather App",
+      title:"Weather App",
       image: Photo6,
       discripction:
         "A web application that provides real-time weather information for any location using the OpenWeatherMap API. Users can search for cities to view current weather conditions, including temperature, humidity, and wind speed.",
       techstcak: "HTML-CSS / JavaScript / API",
       github:"https://github.com/poorveshgediya/WeatherWebApp",
       live: "https://weatherwebappbypurvesh.netlify.app/",
+    },
+    {
+      title:"Daily Dad Joke",
+      image: Photo7,
+      discripction:
+        "A web application that fetches and displays a random dad joke from the `icanhazdadjoke` API each time the user clicks a button. Built in React.",
+      techstcak: "HTML-CSS / JavaScript / React / API",
+      github:"https://github.com/poorveshgediya/DailyDadJoke",
+      live: "https://daily-dad-joke.vercel.app/",
     }
   ];
 

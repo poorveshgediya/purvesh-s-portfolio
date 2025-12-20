@@ -28,15 +28,35 @@ function About() {
                 />
               </span>
             </h1>
-              <h3>About Me</h3>
-              <p className={style.ptag}>
-                Hello! I'm a developer from <span>Gujarat, India</span>. I love to enjoy
-                programming and exploring technology specially <span>web3</span>. Completed one internship & currently doing <span>FSD</span> course at PWSkills.
-              </p>
+            <h3>About Me</h3>
+            <p className={style.ptag}>
+              Hello! I'm a developer from <span>Gujarat, India</span>. I love to
+              enjoy programming and exploring technology specially{" "}
+              <span>web3</span>. Completed one internship & currently doing{" "}
+              <span>FSD</span> course at PWSkills.
+            </p>
             <h3>What i do?</h3>
-            <p className={style.ptag}>Completed one group project during internship & working on my personal project. I'm super active on <span>X</span> where I make content about web3 and crypto.</p>
-            <p className={`${style.ptag} ${style.ptaglasttwo}`}>I'm an Ambassador at <span>#VaraNetwork</span> & Maxis at <span>#CoinDCX</span>.</p>
-            <p className={`${style.ptag} ${style.ptaglasttwo}`}>I'm <span>open to work</span>, freelance, or collaborate. <span><a href="mailto:poorveshgediya@gmail.com">Contact Me</a></span> </p>
+            <p className={style.ptag}>
+              Completed one group project during internship & working on my
+              personal project. I'm super active on
+              <span>
+                <a href="https://x.com/GediyaPoorvesh" target="_blank">
+                  {" "}
+                  X{" "}
+                </a>
+              </span>
+              where I make content about web3 and crypto.
+            </p>
+            <p className={`${style.ptag} ${style.ptaglasttwo}`}>
+              I'm an Ambassador at <span>#VaraNetwork</span> & Maxis at{" "}
+              <span>#CoinDCX</span>.
+            </p>
+            <p className={`${style.ptag} ${style.ptaglasttwo}`}>
+              I'm <span>open to work</span>, freelance, or collaborate.{" "}
+              <span>
+                <a href="mailto:poorveshgediya@gmail.com">Contact Me</a>
+              </span>{" "}
+            </p>
           </div>
           <div className={style.imgbackground}>
             <img className={style.image} src={profile1} alt="" />
