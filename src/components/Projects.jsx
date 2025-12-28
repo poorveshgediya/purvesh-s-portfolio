@@ -70,8 +70,8 @@ function Projects() {
 
   return (
     <>
-      <section id="projects" className={style.projectsection}>
-        <h3 className={style.title}>Projects</h3>
+      <div className={style.projectsection}>
+        <h2 className={style.title}>Projects</h2>
         <div className={style.main_div}>
           {projectdata.map((project, index) => (
             <div key={index} className={style.project}>
@@ -96,7 +96,7 @@ function Projects() {
             </div>
           ))}
         </div>
-      </section>
+      </div>
     </>
   );
 }

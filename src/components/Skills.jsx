@@ -8,6 +8,7 @@ import javascript from "./../photo/javascript.svg";
 import react from "./../photo/reactjs.svg";
 import mongo from "./../photo/mongo.svg";
 import nodejs from "./../photo/nodejs.svg";
+import zod from "./../photo/zod.svg";
 
 const skills = [
   {
@@ -35,6 +36,10 @@ const skills = [
     name: "ReactJS",
   },
   {
+    image: zod,
+    name: "Zod",
+  },
+  {
     image: nodejs,
     name: "NodeJS",
   },
@@ -49,7 +54,7 @@ const repeatedSkills = [...skills, ...skills]
 function Skills() {
   return (
     <>
-      <section id="skills" className={style.skills}>
+      <div className={style.skills}>
         <h3>Tools that I have used</h3>
         <div className={style.skillscontent}>
           {repeatedSkills.map((skill, index) => (
@@ -65,7 +70,7 @@ function Skills() {
             </React.Fragment>
           ))}
         </div>
-      </section>
+      </div>
     </>
   );
 }

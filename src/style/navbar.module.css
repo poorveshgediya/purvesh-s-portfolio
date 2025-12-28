@@ -7,23 +7,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background:rgba(0,0,0,0.09);
+  background: rgba(0, 0, 0, 0.09);
   backdrop-filter: blur(10px);
   letter-spacing: 0.5px;
   z-index: 1000;
 }
-.plogo{
+.plogo {
   padding: 3px;
   width: 40px;
   height: 40px;
   border-radius: 10px;
   border: 1px solid #171717;
 }
-.navbuttons{
+.navbuttons {
   display: flex;
   justify-content: space-evenly;
 }
-.header{
+.header {
   list-style: none;
 }
 .navbarlink {
@@ -31,23 +31,32 @@
   border-radius: 10px;
   text-decoration: none;
   font-size: 1rem;
-  color: whitesmoke; 
+  color: whitesmoke;
 }
 .navbarlink:hover {
   color: #00adb5;
 }
 
-@media only screen and (max-width: 650px){
-  .navbuttons{
+.light-mode {
+  background-color: white;
+  color: black;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 650px) {
+  .navbuttons {
     margin-right: 10px;
   }
 }
 
-@media only screen and (max-width: 400px){
-  .navbar{
+@media only screen and (max-width: 400px) {
+  .navbar {
     height: 50px;
   }
-  .header a{
+  .navbarlink {
     font-size: 0.88rem;
   }
 }

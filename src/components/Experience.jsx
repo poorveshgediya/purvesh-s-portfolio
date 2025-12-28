@@ -41,8 +41,8 @@ const experience = [
 function Experience() {
   return (
     <>
-    <h2 className="experienceheading mt-20 mb-10 font-1rem">Experience</h2>
-      <section className="experiencesection grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 pb-20">
+    <h2 className="experienceheading font-1rem">Experience</h2>
+      <div className="experiencesection grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10">
         {experience.map((experience, index) => (
             <div key={index} className="flex items-start gap-3 hover:translate-y-[-10px]">
               <div className="flex-shrink-0">
@@ -65,7 +65,7 @@ function Experience() {
               </div>
             </div>
         ))}
-      </section>
+      </div>
     </>
   );
 }

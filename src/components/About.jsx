@@ -1,12 +1,16 @@
-import React, { useState } from "react";
 import style from "../style/About.module.css";
 import { Typewriter } from "react-simple-typewriter";
 import profile1 from "../photo/Profile.jpg";
+import { useNavigate } from "react-router-dom";
 
 function About() {
+  const showformpopup = useNavigate();
+  const showcontactform = ()=>{
+    showformpopup("/contactform")
+  }
   return (
     <>
-      <section id="about">
+      <>
         <div className={style.aboutsection}>
           <div className={style.shortbio}>
             <h1 className={style.heading}>
@@ -54,16 +58,15 @@ function About() {
             <p className={`${style.ptag} ${style.ptaglasttwo}`}>
               I'm <span>open to work</span>, freelance, or collaborate.{" "}
               <span>
-                <a href="mailto:poorveshgediya@gmail.com">Contact Me</a>
+                <a onClick={showcontactform}>Contact Me</a>
               </span>{" "}
             </p>
           </div>
           <div className={style.imgbackground}>
             <img className={style.image} src={profile1} alt="" />
-            {/* <div className={style.imgbackground}></div> */}
           </div>
         </div>
-      </section>
+      </>
     </>
   );
 }
