@@ -10,17 +10,19 @@
 .inputfeild {
   background-color: #09090b;
   border-color: #00adb5;
-  color: #fff;
+  color: #fff !important;
   width: calc(100% - 20px);
+  padding: 10px;
+  border-radius: 0;
 }
 
-.submitbutton{
+.submitbutton {
   padding: 5px;
   border: 1px solid #00adb5;
   background-color: #00adb5;
 }
 
-.backbutton{
+.backbutton {
   padding: 5px;
   text-align: center;
   border: 1px solid #00adb5;

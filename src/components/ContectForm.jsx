@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import style from "../style/contectform.module.css";
 import z from "zod";
 import { Link, useLocation } from "react-router-dom";
+import "tailwindcss";
 
 const schema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters long"),
@@ -42,14 +43,14 @@ function ContectForm() {
 
   return (
     <>
-      <form onSubmit={handleformdata} className={style.contectform}>
+      <form onSubmit={handleformdata} className="mb-[100px] flex flex-col items-center justify-center gap-[5px]">
         <input
           type="text"
           placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           className={style.inputfeild}
-        />
+          />
         {getFieldError("name") && (
           <p style={{ color: "red" }}>{getFieldError("name")}</p>
         )}
@@ -59,7 +60,7 @@ function ContectForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className={style.inputfeild}
-        />
+          />
         {getFieldError("email") && (
           <p style={{ color: "red" }}>{getFieldError("email")}</p>
         )}
@@ -78,7 +79,7 @@ function ContectForm() {
         >
           Submit
         </button>
-        {backbtnlocation.pathname !== "/home" && (
+        {backbtnlocation.pathname === "/contactform" && (
           <Link
             to={"/home"}
             className={`${style.inputfeild} ${style.backbutton}`}

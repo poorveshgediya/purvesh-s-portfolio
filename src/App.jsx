@@ -1,5 +1,3 @@
-import React from "react";
-import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
@@ -9,6 +7,7 @@ import ContectForm from "./components/ContectForm";
 import Blogs from "./components/Blogs";
 
 function App() {
+
   return (
     <div className="MainDiv" style={{ maxWidth: "912px", margin: "0 auto" }}>
       <Navbar />
