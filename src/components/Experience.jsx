@@ -10,21 +10,21 @@ function Experience() {
         {experience.map((experience, index) => (
             <div key={index} className="product-card flex items-start gap-3 transition-all duration-300 
             hover:shadow-xl hover:-translate-y-1">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <img
                   alt="Company Logo"
-                  className="w-12 h-12 rounded-full object-fill bg-[#fff]"
+                  className="w-12 h-12 rounded-full object-fill bg-white"
                   src={experience.logo}
                 />
               </div>
-              <div className="flex-grow">
-                <h2 className="text-[#fff] text-1rem font-bold:500">
+              <div className="grow">
+                <h2 className="text-white text-1rem font-bold:500">
                   {experience.company}
                 </h2>
                 <h3 className="text-[#00adb5] text-[0.88rem] font-bold:400">
                   {experience.role}
                 </h3>
-                <p className="text-[#a19c9b] text-[0.88rem] mt-[10px] text-justify">
+                <p className="text-[#a19c9b] text-[0.88rem] mt-2.5 text-justify">
                   {experience.description}
                 </p>
               </div>

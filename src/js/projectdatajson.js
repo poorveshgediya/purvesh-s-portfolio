@@ -5,8 +5,18 @@ import Photo5 from "../photo/tic-tac-toe.png";
 import Photo6 from "../photo/WeatherWebApp.png";
 import Photo7 from "../photo/DailyDadJoke.png";
 import Photo8 from "../photo/RichTextEditor.png";
+import Photo9 from "../photo/GithubProfileFetcher.png";
 
 export const projectdata = [
+  {
+    title: "Github Profile Fetcher",
+    image: Photo9,
+    discripction:
+      " A web application that allows users to fetch and display GitHub profile information by entering a GitHub username. It utilizes the GitHub API to retrieve data such as the user's avatar, name, bio, repositories, followers, exc ... providing an interactive way to explore GitHub profiles.",
+    techstcak: "HTML / Tailwind CSS / JavaScript / React / API",
+    github: "https://githubprofile-fetcher.vercel.app",
+    live: "https://github.com/poorveshgediya/GitHub_Profile_Fetcher",
+  },
   {
     title: "Rich Text Editor",
     image: Photo8,

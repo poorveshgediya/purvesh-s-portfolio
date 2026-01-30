@@ -7,7 +7,6 @@ import ContectForm from "./components/ContectForm";
 import Blogs from "./components/Blogs";
 
 function App() {
-
   return (
     <div className="MainDiv" style={{ maxWidth: "912px", margin: "0 auto" }}>
       <Navbar />
