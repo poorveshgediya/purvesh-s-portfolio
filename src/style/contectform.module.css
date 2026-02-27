@@ -8,18 +8,21 @@
 }
 
 .inputfeild {
-  background-color: #09090b;
-  border-color: #00adb5;
+  background-color: #09090b !important;
+  border-color: #00adb5 !important;
   color: #fff !important;
   width: calc(100% - 20px);
   padding: 10px;
   border-radius: 0;
 }
+/* input:-webkit-autofill{
+  -webkit-back
+} */
 
 .submitbutton {
   padding: 5px;
   border: 1px solid #00adb5;
-  background-color: #00adb5;
+  background-color: #00adb5 !important;
 }
 
 .backbutton {

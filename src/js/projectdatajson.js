@@ -14,8 +14,8 @@ export const projectdata = [
     discripction:
       " A web application that allows users to fetch and display GitHub profile information by entering a GitHub username. It utilizes the GitHub API to retrieve data such as the user's avatar, name, bio, repositories, followers, exc ... providing an interactive way to explore GitHub profiles.",
     techstcak: "HTML / Tailwind CSS / JavaScript / React / API",
-    github: "https://githubprofile-fetcher.vercel.app",
-    live: "https://github.com/poorveshgediya/GitHub_Profile_Fetcher",
+    github: "https://github.com/poorveshgediya/GitHub_Profile_Fetcher",
+    live: "https://githubprofile-fetcher.vercel.app",
   },
   {
     title: "Rich Text Editor",

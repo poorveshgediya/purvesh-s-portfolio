@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import style from "../style/contectform.module.css";
 import z from "zod";
 import { Link, useLocation } from "react-router-dom";
-import "tailwindcss";
 
 const schema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters long"),
@@ -43,7 +42,7 @@ function ContectForm() {
 
   return (
     <>
-      <form onSubmit={handleformdata} className="mb-[100px] flex flex-col items-center justify-center gap-[5px]">
+      <form onSubmit={handleformdata} className="mb-20 flex flex-col items-center justify-center gap-1.5">
         <input
           type="text"
           placeholder="Name"
