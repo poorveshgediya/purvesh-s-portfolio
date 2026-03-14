@@ -1,4 +1,3 @@
-import React from "react";
 import style from "../style/navbar.module.css";
 import p from "./../photo/p.svg";
 import { NavLink } from "react-router-dom";
@@ -21,6 +20,7 @@ function Navbar() {
                 })}
                 className={style.navbarlink}
                 to="/home"
+                title="HomePage"
               >
                 Home
               </NavLink>
@@ -32,6 +32,7 @@ function Navbar() {
                 })}
                 className={style.navbarlink}
                 to="/projects"
+                title="ProjectPage"
               >
                 Projects
               </NavLink>
@@ -43,6 +44,7 @@ function Navbar() {
                 })}
                 className={style.navbarlink}
                 to="/blogs"
+                title="BlogPage"
               >
                 Blogs
               </NavLink>

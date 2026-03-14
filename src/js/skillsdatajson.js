@@ -7,6 +7,7 @@ import react from "./../photo/reactjs.svg";
 import mongo from "./../photo/mongo.svg";
 import nodejs from "./../photo/nodejs.svg";
 import zod from "./../photo/zod.svg";
+import express from "./../photo/ExpressjsDark.svg"
 
 export const skills = [
     {
@@ -44,5 +45,8 @@ export const skills = [
     {
       image: mongo,
       name: "MongoDB",
-    },
+    },{
+      image: express,
+      name:"Express JS"
+    }
   ];

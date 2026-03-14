@@ -1,19 +1,18 @@
-::-webkit-scrollbar{
-    display: none;
-  }
-  
-html {
-    scroll-behavior: smooth;
+::-webkit-scrollbar {
+  display: none;
 }
 
-:root{
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
   background-color: #09090b;
   color: white;
   font-family: "Fredoka", sans-serif;
 }
-body{
+body {
   background-color: #09090b;
   padding-top: 80px;
+  cursor:pointer;
 }
-
-  

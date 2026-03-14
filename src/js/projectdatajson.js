@@ -6,8 +6,17 @@ import Photo6 from "../photo/WeatherWebApp.png";
 import Photo7 from "../photo/DailyDadJoke.png";
 import Photo8 from "../photo/RichTextEditor.png";
 import Photo9 from "../photo/GithubProfileFetcher.png";
+import Photo10 from "../photo/voiceaitaskmanager.png";
 
 export const projectdata = [
+  {
+    title: "Voice AI Task Manager",
+    image: Photo10,
+    discripction:"A voice-enabled productivity tool built with the MERN stack that allows users to create, delete and read the tasks using natural speech commands. Features include real-time voice processing, a responsive React UI with skeleton loading states, and a scalable Node.js backend hosted on Render.",
+    techstcak: "React / Tailwind CSS / JavaScript / Node / Express / Mongoose / Gemini API ",
+    github: "https://github.com/poorveshgediya/Voice_AI_Task_Manager_Frontend/",
+    live: "https://voice-ai-task-manager.vercel.app/",
+  },
   {
     title: "Github Profile Fetcher",
     image: Photo9,
