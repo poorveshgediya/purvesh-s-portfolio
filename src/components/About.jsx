@@ -2,6 +2,7 @@ import style from "../style/About.module.css";
 import { Typewriter } from "react-simple-typewriter";
 import profile1 from "../photo/Profile.jpg";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function About() {
   const showformpopup = useNavigate();
@@ -49,7 +50,7 @@ function About() {
                   X{" "}
                 </a>
               </span>
-              where I make content about web3 and crypto.
+              where I make <Link to={"/contents"}>Content</Link> about web3 and crypto.
             </p>
             <p className={`${style.ptag} ${style.ptaglasttwo}`}>
               I'm an Ambassador at <span>#VaraNetwork</span> & Maxis at{" "}

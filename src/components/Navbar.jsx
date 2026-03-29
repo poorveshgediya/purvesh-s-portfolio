@@ -43,10 +43,10 @@ function Navbar() {
                   color: isActive ? "#00adb5" : "whitesmoke",
                 })}
                 className={style.navbarlink}
-                to="/blogs"
+                to="/contents"
                 title="BlogPage"
               >
-                Blogs
+                Contents
               </NavLink>
             </li>
           </div>

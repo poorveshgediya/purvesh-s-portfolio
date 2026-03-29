@@ -27,12 +27,12 @@ function ContectForm() {
     setErrors([]);
     if (result.success) {
       alert("Form submitted successfully!");
+      setName("");
+      setEmail("");
+      setMessage("");
     } else {
       setErrors(result.error.issues);
     }
-    setName("");
-    setEmail("");
-    setMessage("");
   };
   const getFieldError = (fieldName) => {
     return errors
@@ -42,14 +42,17 @@ function ContectForm() {
 
   return (
     <>
-      <form onSubmit={handleformdata} className="mb-20 flex flex-col items-center justify-center gap-1.5">
+      <form
+        onSubmit={handleformdata}
+        className="mb-20 flex flex-col items-center justify-center gap-1.5"
+      >
         <input
           type="text"
           placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           className={style.inputfeild}
-          />
+        />
         {getFieldError("name") && (
           <p style={{ color: "red" }}>{getFieldError("name")}</p>
         )}
@@ -59,7 +62,7 @@ function ContectForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className={style.inputfeild}
-          />
+        />
         {getFieldError("email") && (
           <p style={{ color: "red" }}>{getFieldError("email")}</p>
         )}

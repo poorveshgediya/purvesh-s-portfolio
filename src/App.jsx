@@ -33,7 +33,7 @@ function App() {
         <Route path="/projects" element={<AllProjects />}></Route>
         <Route path="/home" element={<Main />}></Route>
         <Route path="/contactform" element={<ContectForm />}></Route>
-        <Route path="/blogs" element={<Blogs />}></Route>
+        <Route path="/contents" element={<Blogs />}></Route>
       </Routes>
       <Footer />
     </div>
