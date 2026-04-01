@@ -59,6 +59,10 @@ p a{
   border-radius: 8px;
   transform: rotatez(-3deg);
 }
+.image:hover {
+  transform: rotatez(3deg);
+  transition: all 0.3s ease-in-out;
+}
 @media only screen and (max-width:900px){
   .aboutsection {
     margin: 0 20px;

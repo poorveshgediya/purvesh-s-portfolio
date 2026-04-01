@@ -1,6 +1,6 @@
 import style from "../style/About.module.css";
 import { Typewriter } from "react-simple-typewriter";
-import profile1 from "../photo/Profile.jpg";
+import profile1 from "../photo/profile.jpg";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
